@@ -1,0 +1,9 @@
+name: "Check project release"
+
+on:
+  release:
+    types: [created, edited]
+
+jobs:
+  Check:
+    uses: usf-cs272-spring2022/project-checks/.github/workflows/project-release.yml@main

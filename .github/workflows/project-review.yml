@@ -1,0 +1,9 @@
+name: "Check project review"
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+jobs:
+  Check:
+    uses: usf-cs272-spring2022/project-checks/.github/workflows/project-review.yml@main

@@ -1,0 +1,9 @@
+name: "Check project issue"
+
+on:
+  issues:
+    types: [opened, reopened]
+
+jobs:
+  Check:
+    uses: usf-cs272-spring2022/project-checks/.github/workflows/project-issue.yml@main
